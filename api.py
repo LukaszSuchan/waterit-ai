@@ -29,7 +29,7 @@ class InputData(BaseModel):
         crop_type_idx =crop_type_list.index(self.crop_type) 
         sample_crop_type = np.zeros(15)
         sample_crop_type[crop_type_idx] = 1
-        sample = np.array([soil_type_dict[self.soil_type], air_humidity_type_dict[self.air_humidity_type], self.tempreature,
+        sample = np.array([soil_type_dict[self.soil_type], air_humidity_type_dict[self.air_humidity_type], self.temperature,
                   weather_condition_type[self.weather_condition]])
         sample = np.concatenate([sample, sample_crop_type])
         print(sample)
