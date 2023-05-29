@@ -39,4 +39,4 @@ class InputData(BaseModel):
 def predict(input_data: InputData):
     X = [input_data.create_sample()]
     y_pred = model.predict(X)
-    return {'predykcja': y_pred[0]}
+    return {'prediction': y_pred[0]}
