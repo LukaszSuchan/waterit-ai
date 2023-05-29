@@ -23,7 +23,7 @@ class InputData(BaseModel):
     air_humidity_type: str
     weather_condition: str
     crop_type: str
-    temperature: float
+    tempreature: float
 
     def create_sample(self):
         crop_type_idx =crop_type_list.index(self.crop_type) 
