@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 
 soil_type_dict = {'DRY': 0, 'HUMID': 1, 'WET': 2}
-air_humidity_type_dict = {'DESERT': 0, 'HUMID': 1, 'SEMI ARID': 2, 'SEMI HUMID': 3}
+air_humidity_type_dict = {'DESERT': 0, 'HUMID': 1, 'SEMI_ARID': 2, 'SEMI_HUMID': 3}
 weather_condition_type = {'NORMAL': 0, 'RAINY': 1, 'SUNNY': 2, 'WINDY': 3}
 crop_type_list = ['BANANA', 'BEAN', 'CABBAGE', 'CITRUS', 'COTTON', 'MAIZE', 'MELON',
        'MUSTARD', 'ONION', 'POTATO', 'RICE', 'SOYABEAN', 'SUGARCANE', 'TOMATO',
